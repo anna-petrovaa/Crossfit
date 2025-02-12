@@ -219,6 +219,88 @@
              class="family-image" width="414" height="474" loading="lazy">
          </div>
       </div>
+       
+     <section class="calculate">
+      <div class="calculate-inner container">
+        <div class="calculate-body">
+         <h2 class="calculate-title title-medium backdrop-title" data-title="BMI">
+            Input your BMI
+         </h2>
+          <div class="calculate-description">
+            <p>Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei</p>
+          </div>
+          <form  class="calculate-form">
+            <div class="calculate-form-body">
+               <label class="visually-hidden" for="height">Height</label>
+               <input  class="calculate-input input" type="number" id="height" placeholder="Height / cm">
+
+               <label class="visually-hidden" for="weight">Weight</label>
+               <input  class="calculate-input input" type="number" id="weight" placeholder="Weight / kg">
+
+               <label class="visually-hidden" for="age">Age</label>
+               <input  class="calculate-input input" type="number" id="age" placeholder="Age">
+
+                <!-- у этого input и select одинаковый вид, поэтому такие стили -->
+               <label class="visually-hidden" for="gender">Gender</label>
+                <select name="" id="gender" class="calculate-input input"required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <!--класс-модификатор wide нужен, чтобы установить ширину в 2 раза больше -->
+                <label class="visually-hidden" for="activity-factor">Gender</label>
+                <select name="" id="activity-factor" class="calculate-input input wide"required>
+                    <option value="" disabled selected>Select an activity factor:</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+            </div>
+            <button class="calculate-button button transparent" type="submit"></button>
+          </form>
+        </div>
+        <div class="calculate-table-wrapper">
+          <table class="calculate-table">
+             <thead>
+               <tr>
+                  <th>BMI</th>
+                  <th>Weight status</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+               </tr>
+
+               <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+               </tr>
+
+               <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+               </tr>
+
+               <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+               </tr>
+             </tbody>
+             <tfoot>
+                <tr>
+                  <td colspan="2"><b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index</td>
+                </tr>
+             </tfoot>
+          </table>
+        </div>
+      </div>
+     </section>
+
+
 
     </main>
 
